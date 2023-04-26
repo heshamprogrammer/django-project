@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding:0;
+            margin: 0;
+            text-transform: capitalize;
+            font-family: sans-serif;
+        }
+        header,footer{
+            background-color: #ccc;
+            color: #252525;
+            text-align: center;
+            width: 100%;
+            padding: 10px;
+            box-sizing: 0 0 10px #ccc;
+        }
+        a{
+            padding: 10px;
+            border-radius: 5px;
+            background-color: #252525;
+            color: white;
+        }
+        a,ul{
+            text-decoration: none;
+            list-style: none;
+        }
+        body{
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h2>welcome</h2>
+    </header>
+    {% block content %}
+
+    {% endblock content %}
+    <footer>
+        <p>
+            goodbye
+        </p>
+    </footer>
+</body>
+</html>
